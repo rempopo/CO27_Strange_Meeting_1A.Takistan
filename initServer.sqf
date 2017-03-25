@@ -44,7 +44,7 @@ PublicVariable "attack_start";
 };
 //Timer
 [] spawn {
-	WaitUntil {Sleep 60};
+	WaitUntil {sleep 60};
 	attack_start = 1;
 };
 //Artillery
