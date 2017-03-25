@@ -53,6 +53,7 @@ attack_start = 0;
 	};
 
 //Move groups
+<<<<<<< HEAD
 	[] spawn {
 		waitUntil {attack_start == 1};
 		[force_1, [getPosASL pos_1, getPosASL pos_2, getPosASL pos_3], "SAD"] call dzn_fnc_dynai_moveGroups; 
