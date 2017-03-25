@@ -50,10 +50,6 @@ attack_start = 0;
 	stopFiring = 1;
 
 //Move groups
-	[] spawn {
-		waitUntil {attack_start == 1};
 		[force_1, [getPosASL pos_1, getPosASL pos_2, getPosASL pos_3], "SAD"] call dzn_fnc_dynai_moveGroups; 
 		[force_2, [getPosASL pos_1, getPosASL pos_2, getPosASL pos_3], "SAD"] call dzn_fnc_dynai_moveGroups;
-		AGS fireAtTarget [TARGET]
-	};
 };
