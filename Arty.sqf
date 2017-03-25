@@ -19,7 +19,7 @@ _invert = -1;
 _precision = 70; //All artillery will fall within 70m of the line. 
 
 //Artillery will fall on the target area from the moment that this script is invoked until the global variable "stopFiring" is true. 
-while {!stopFiring} do { 
+while {stopFiring=1} do { 
 _XTarget = _invert * (random _xDist) + (_pos1 select 0); 
 _YTarget = _slp * _XTarget + _int; 
 
