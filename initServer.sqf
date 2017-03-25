@@ -39,7 +39,7 @@ PlayerConnectedEH = addMissionEventHandler ["PlayerConnected", {
 
 //Trigger for attack start
 [] spawn {
-attack_start = false;
+attack_start = 1;
 PublicVariable "attack_start";
 };
 //Timer
@@ -49,7 +49,7 @@ PublicVariable "attack_start";
 };
 //Artillery
 [] spawn {
-	waitUntil {!isNil "attack_start"};
+	waitUntil {attack_start=1};
 	execVM "Arty.sqf";
 };
 //Move groups
