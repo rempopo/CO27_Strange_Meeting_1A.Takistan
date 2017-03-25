@@ -47,10 +47,7 @@ attack_start = 0;
 	attack_start = 1;
 
 //Artillery
-	[] spawn {
-		waitUntil {attack_start == 1};
-		stopFiring = 1;
-	};
+	stopFiring = 1;
 
 //Move groups
 	[] spawn {
