@@ -49,7 +49,7 @@ PublicVariable "attack_start";
 };
 //Artillery
 [] spawn {
-	waitUntil {attack_start=1};
+	waitUntil {attack_start == 1};
 	execVM "Arty.sqf";
 };
 //Move groups
