@@ -39,7 +39,7 @@ PlayerConnectedEH = addMissionEventHandler ["PlayerConnected", {
 
 //Trigger for attack start
 [] spawn {
-attack_start = 1;
+attack_start = 0;
 PublicVariable "attack_start";
 };
 //Timer
